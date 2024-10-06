@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  nginx:
+    restart: always
+    image: nginx
+    ports:
+      - 8089:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+  instancias:
+    image: instancias
+    ports: 
+      - 3001:3001
+      - 3002:3002
+      - 3003:3003
