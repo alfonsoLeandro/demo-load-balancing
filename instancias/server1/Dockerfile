@@ -2,7 +2,9 @@ FROM node
 
 WORKDIR /src
 COPY package.json package-lock.json /src/
-EXPOSE 3001 3002 3003
+EXPOSE 3000
 
-COPY .. .
+COPY ../.. .
+RUN ["npm", "install"]
+
 CMD ["npm", "run", "start"]

@@ -1,0 +1,16 @@
+{
+  "name": "demo-lb-2-server-2",
+  "version": "1.0.0",
+  "main": "server2.js",
+  "scripts": {
+    "start": "node server2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

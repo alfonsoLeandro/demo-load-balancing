@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 
 app.get('/', function (req, res) {
-    res.status(200).send('App 1 respondiendo!!!');
+    res.status(200).send('si el 2 anda bien');
 });
 
-const port = 3001;
+const port = 3000;
 
 const server = app.listen(port, function() {
     console.log('Express server listening on port ' + port);
